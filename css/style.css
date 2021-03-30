@@ -1,0 +1,211 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(70px); }
+  80% {
+    transform: translateY(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  padding: 2rem;
+  box-sizing: border-box; }
+
+.header-primary-text {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  text-align: center; }
+
+.heading-primary-main {
+  font-size: 5rem;
+  color: #fff;
+  font-weight: 400;
+  animation: moveInLeft .5s ease-out; }
+
+.heading-primary-sub {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 400;
+  animation: moveInRight .5s ease-out; }
+
+.text-effect-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right, #654321, #b5651d);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .text-effect-text:hover {
+    transform: skewY(1deg) skewX(10deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.text-after:after {
+  display: block;
+  height: 2px;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-image: linear-gradient(to right, #654321, #b5651d);
+  -webkit-background-clip: content;
+  color: transparent; }
+
+.text-after-psudo {
+  margin-top: 2.5rem;
+  margin-left: 22rem;
+  margin-right: 20rem;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #555; }
+
+.text-box-text {
+  font-size: 2rem;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1.5rem;
+  font-weight: 400; }
+
+.features-text-small {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400; }
+
+.icon-box {
+  font-size: 6rem;
+  margin-bottom: 3rem;
+  display: block;
+  background-image: linear-gradient(to right, #654321, #b5651d);
+  -webkit-background-clip: text;
+  color: transparent; }
+
+.header-text-margin {
+  margin-bottom: 4rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 1.7rem;
+  border-radius: 100px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+
+.btn-white {
+  color: #777;
+  background-color: #fff; }
+
+.btn-animated {
+  animation: moveInBottom .5s ease-out 0.75s;
+  animation-fill-mode: backwards; }
+
+.features-box {
+  padding: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.2s;
+  box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.4); }
+  .features-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.4); }
+
+.site-nav {
+  float: right;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 3.7rem; }
+  .site-nav ul {
+    list-style: none;
+    margin-right: 10rem; }
+  .site-nav li {
+    display: inline-block;
+    margin-right: 2rem;
+    font-weight: 400; }
+  .site-nav .border-button {
+    border-bottom: 2px solid #000;
+    transition: border-width 0.2s linear; }
+  .site-nav .border-button:hover {
+    border-width: 10px;
+    border: 5px solid #000;
+    padding: 2.6px;
+    background-color: #0b3e4b; }
+  .site-nav a:link,
+  .site-nav a:visited {
+    text-decoration: none;
+    color: #fff;
+    padding: .3rem 0;
+    text-transform: uppercase; }
+
+.header-primary {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(101, 67, 33, 0.8), rgba(181, 101, 29, 0.8)), url(../img/fashion.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background-attachment: fixed; }
+
+.header-logo {
+  position: absolute;
+  top: 0rem;
+  margin-left: 5rem;
+  height: 12rem; }
+
+.all-vh {
+  height: 120vh;
+  margin-top: -20vh;
+  background-color: #f7f7f7; }
+
+.section-text-psudo {
+  padding-top: 15rem;
+  padding-bottom: 5rem; }

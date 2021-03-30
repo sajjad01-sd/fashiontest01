@@ -1,0 +1,87 @@
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    padding: 2rem;
+    box-sizing: border-box;
+   }
+   
+   .header-primary-text {
+       display: block;
+       position: absolute;
+       top: 40%;
+       left: 10%;
+       text-align: center;
+   }
+   .heading-primary-main {
+        font-size: 5rem;
+        color: $color-white;
+        font-weight: 400;
+        animation: moveInLeft .5s ease-out;
+   }
+   .heading-primary-sub {
+       font-size: 3rem;
+       color: $color-white;
+        font-weight: 400;
+        animation: moveInRight .5s ease-out;
+   }
+
+.text-effect-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    background-image: linear-gradient(to right, #654321, $color-primary-light);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.2s;
+    text-shadow: 0.5rem 1rem 2rem rgba($color: #000000, $alpha: .2);
+    
+    &:hover {
+        transform: skewY(1deg) skewX(10deg) scale(1.1);
+        text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+    
+}
+.text-after {
+    &:after {
+        display: block;
+        height: 2px;
+        content: " ";
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 30px;
+        background-image: linear-gradient(to right, #654321, $color-primary-light);
+        -webkit-background-clip: content;
+        color: transparent;
+    }
+}
+.text-after-psudo {
+    margin-top: 2.5rem;
+    margin-left: 22rem;
+    margin-right: 20rem;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $text-color;
+}
+.text-box-text {
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+.features-text-small {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.icon-box {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    display: block;
+    background-image: linear-gradient(to right, #654321, $color-primary-light);
+    -webkit-background-clip: text;
+    color: transparent;
+}
